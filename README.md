@@ -14,25 +14,7 @@ Además, se irá colgando en este repositorio el material que se vaya generando 
  
 ## Programa del curso
 
-### DÍA 1 – Java versión 8, 11
-
-- Repaso a versiones previas de Java
-- Configuración del IDE Eclipse y uso básico de Maven
-- Configuración de proyectos para entornos IC
-- Introducción al Framework THOR
-- Nuevas características en Java 8 y Java 11
-    - Lambda Expressions
-    - Method References
-    - Default Methods
-    - Local Variable Type Inference
-    - Collections
-    - Date-Time package
-    - Internacionalización
-    - Seguridad
-    - Concurrencia
-    - Módulos
-- Talleres prácticos y ejercicios
- 
+### [DÍA 1 – Java versión 8, 11](./sesion1/README.md)
 
 ### DÍA 2 – Spring
 
