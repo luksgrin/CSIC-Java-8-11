@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">      
+	<head>
+	    <title>Registro</title>   
+	</head>
+	<body>
+		<H1>Registrar usuario CSIC</H1>
+		<h:form>
+			<h:outputLabel for="email">email:  </h:outputLabel>
+	        <h:inputText id="email" value="#{registerBean.email}" required="true">
+	        	<!-- Añadir validacion de email con regex (^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$ -->
+	        </h:inputText>
+	        <br/>
+	        <br/>
+	        <h:outputLabel for="username">usuario:  </h:outputLabel>
+	        <h:inputText id="username" value="#{registerBean.username}" required="true" >
+	        	<!-- Añadir validacion de usuario -->
+	        </h:inputText>
+	        <br/>
+	        <br/>
+	        <h:outputLabel for="password">contraseña:  </h:outputLabel>
+	        <h:inputText id="password" value="#{registerBean.password}" required="true">
+	      		<!-- Añadir validacion de contraseña -->
+	        </h:inputText>
+	        <br/>
+	        <br/>
+	        <h:commandButton value="registrar" action="#{registerBean.register}" />
+	        <br/>
+	        <br/>
+		</h:form>
+	    <h:outputLabel rendered="#{registerBean.isRegisterOk}" for="username">Usuario registrado correctamente :D</h:outputLabel>
+	</body>
+</html>
